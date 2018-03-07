@@ -24,3 +24,27 @@
 #
 #Delete these comments before commit!
 #Good luck.
+
+from real_matrice import Matrix
+
+def print_matrix(text, matrix):
+	print(text)
+	print("{} {}".format(matrix[0], matrix[1]))
+	print("{} {}".format(matrix[2], matrix[3]))
+
+
+if __name__ == "__main__":
+
+	matrix_1 = Matrix(4,5,6,7)
+	matrix_2 = Matrix(2,2,2,1)
+
+	matrix_3 = matrix_2.add(matrix_1)
+	matrix_4 = matrix_2.product(matrix_1)
+
+	print_matrix('Matrix1:', matrix_1.numbers)
+	print_matrix('Matrix2:', matrix_2.numbers)
+	
+	print()
+
+	print_matrix('Add:', matrix_3)
+	print_matrix('Product:', matrix_4)
