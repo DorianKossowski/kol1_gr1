@@ -36,7 +36,6 @@ class Matrix(object):
 		for i in range(self.dimension):
 			for j in range(self.dimension):
 				result_matrix.matrix[i][j] = self.matrix[i][j] + toAdd
-
 		return result_matrix
 
 	def __sub__(self, toSubtract):
